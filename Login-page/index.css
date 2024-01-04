@@ -114,7 +114,7 @@ main{
     flex-direction: column;
     align-items: flex-start;
 }
-.create-account > div > input{
+.create-account > div > button{
     cursor: pointer;
     padding: 8px 25%;
     border: 0px;
