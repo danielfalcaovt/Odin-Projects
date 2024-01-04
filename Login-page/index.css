@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap');*{
+    padding: 0px;
+    margin: 0px;
+}
+html,body{
+    height: 100vh;
+    font-family: "Work Sans",Arial, Helvetica, sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+}
+#landing-page{
+    height: 100vh;
+    background: black url("./img/actress.jpg") top center/cover no-repeat;
+    position: relative;
+}
+#landing-page > div {
+    position: absolute;
+    top: 13%;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e70a547b;
+}
+#landing-page > div > h1{
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: "Montserrat Alternates";
+    color: white;
+ 
+}
+#landing-page > div > svg{
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+
+/* form*/
+
+#form-page{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.7fr; 
+    height: 100vh;
+}
+.form-text{
+    position: relative;
+}
+.form-text > h1{
+    position: absolute;
+    left: 5%;
+    top: 80px;
+    font-size: 2rem;
+}
+
+.form-text > h2{
+    top: 120px;
+    left: 5%;
+    position: absolute;
+    font-size: 1.2rem;
+}
+.form-text > p{
+    position: absolute;
+    top: 160px;
+    left: 5%;
+}
+#form-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 0.4fr;
+}
+.input-boxes-container{
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.235);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 5%;
+}
+.input-boxes{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.input-boxes > input{
+    margin-top: 5px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    text-indent: 5px;
+    background: rgb(246, 246, 246);
+    transition: all 0.3s;
+    padding: 2px 0px;
+}
+.input-boxes>input:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.329);
+}
+.input-boxes > input:focus{
+    outline: 0px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.329);
+}
+.create-account{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.create-account > div {
+    margin: 5% 0% 0% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.create-account > div > input{
+    cursor: pointer;
+    padding: 8px 25%;
+    border: 0px;
+    border-radius: 5px;
+    background: #e70a54;
+    color: white;
+}
+.create-account > div > label {
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
