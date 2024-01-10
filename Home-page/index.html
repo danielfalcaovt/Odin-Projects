@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <nav class="nav--container">
+            <div class="logo"><img src="img/icon.png" alt="Company icon"></div>
+            <div id="search--bar">
+                <input placeholder="Search" type="search" name="search--bar" id="search"/>
+                <button id="search--button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg></button>
+            </div>
+            <div class="ham--container">
+                <div class="ham-box">
+                    <div class="ham-line"></div>
+                    <div class="ham-line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="article--one">
+                <div class="img">
+                    <img src="img/company-image.jpg" alt="company">
+                </div>
+                <div class="text-container">
+                    <h1>Aim Design</h1>
+                    <p>Acrossing the desert of design and taking the best of what have there.</p>
+                    <a href=""><div><span>Read More</span></div></a>
+                </div>
+            </article>
+            <article id="article--two">
+                <div class="testemonials">
+                        <img id="fir--img_test" src="img/staff1.jpg" alt="Staff of company">
+                        <img id="sec--img_test" src="img/staff2.jpg" alt="Staff of company">
+                        <img id="thr--img_test" src="img/staff3.jpg" alt="Staff of company">
+                        <div class="testemonials-text">
+                            <h1>Design</h1>
+                            <p>One of the most important things when we talk about business.</p>
+                        </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div id="contact-us">
+            <div class="contact-us--title">
+                <h1 id="contact-us--txtreceiver">Talk with us...</h1>
+            </div>
+            <form action="/">
+                <input placeholder="Email" type="text" name="email" id="email">
+                <input placeholder="Number" type="text" name="number" id="number">
+                <textarea placeholder="Answers..." name="answer" id="answer" cols="30" rows="5"></textarea>
+                <input id="form-submit" type="submit" value="Send">
+            </form>
+        </div>
+        <div id="about-company">
+            <div class="address">
+                <div class="a-c-title">
+                    <h1>Aim Designers</h1>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis porro error iure at recusandae rem? In harum sit ducimus aliquam ad qui id? Quas quisquam incidunt provident adipisci ea. Nulla.</p>
+                <ul>
+                    <li>XX-XXXXX</li>
+                    <li>email@email.com</li>
+                    <li>profile@user</li>
+                </ul>
+            </div>
+          
+        </div>
+        <div id="copyright">
+            <img src="img/icon.png" alt="meta icon">
+            <p>Copyright <span id="year"></span></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

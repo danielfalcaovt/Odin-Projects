@@ -1,0 +1,1 @@
+document.querySelector("#year").append(new Date().getFullYear());
