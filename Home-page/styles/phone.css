@@ -1,0 +1,59 @@
+#search--bar > input{
+   width: 60%; 
+   font-size: 1.5rem;
+}
+#search--bar > input::placeholder{
+    position: fixed;
+    top: 50%;
+    transform: translate(0px, -43.5%);
+}
+#search--bar > button{
+    width: 20%;
+}
+#search--bar > button:hover{
+    cursor: pointer;
+}
+#article--one{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.text-container{
+    align-items: center;
+}
+.text-container p {
+    text-align: center;
+}
+.article--two{
+    height: 50vh;
+}
+.testemonials{
+    grid-template-rows: 1fr 1fr;
+}
+.testemonials > img{
+    padding-bottom: 55px;
+    width: 175px;
+    height: 175px;
+}
+.testemonials > img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+#fir--img_test{
+    cursor: pointer;
+    filter: opacity(50%);
+    width: 75px;
+    height: 75px;
+}
+#sec--img_test{
+    
+}
+#thr--img_test{
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    filter: opacity(50%);
+}

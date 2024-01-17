@@ -170,7 +170,7 @@ header > nav{
 }
 #sec--img_test{
     margin: auto;
-    grid-area: 1/2/2/2;
+    grid-area: 1/2/3/2;
 }
 #thr--img_test{
     margin: auto;
@@ -281,10 +281,19 @@ textarea{
     margin-top: 50px;
     justify-content: center;
     align-items: flex-end;
+    gap: 15px;
 }
 .address> ul li{
     font-size: 1.5rem;
     margin-bottom: 15px;
+}
+.address > ul li:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.address > ul:hover{
+    transform:scale(0.93);
+    transition: all 0.3s;
 }
 #about-company .address ul{
     list-style: none;
