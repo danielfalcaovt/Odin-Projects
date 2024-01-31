@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html,body{
+    background: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+header{
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.519);
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0D0D0D;
+}
+header > h1{
+    color: white;
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.407);
+    margin-left: 15px;
+    cursor: default;
+}
+header > h1:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+/*MAIN*/
+
+main {
+    height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+main > button{
+    margin: 15px 0px;
+    border: 1px solid white;
+    padding: 5px 7.5px;
+    border-radius: 25px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+main > button:hover{
+    background: white;
+    color:#141414;
+}
+
+
+/* modal */
+#submit-form{
+    position: fixed;
+    top: 25%;
+    margin: auto;    
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.302);
+    border-radius: 15px;
+    background: rgb(243, 243, 243);
+    height: 60%;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#submit-form > h1{
+    margin-top: 12.5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#close-sf{
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.form{
+    margin-top: 50px;
+    height: 60%;
+    width: 200px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.3fr 1fr;
+    grid-template-columns: 1fr;
+}
+input[type="text"], input[type="number"]{
+    height: 75%;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+input[type="text"]:focus{
+
+    outline: 0px;
+}
+.form > button{
+    height: 75%;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(83,83,219),rgb(83, 83, 170));
+    color: white;
+}
+.form > button:hover{
+    transition: 0.3s;
+}
+.form > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.form > div > label{
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    margin-left: 5px;
+    width: 25%;
+    cursor: pointer;
+}
+#books{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book-container > h1{
+    font-family: cursive;
+    grid-area: 1/1/1/3;
+    text-align: center;
+}
+.book-container{
+    padding: 15px;
+    display: grid;
+    margin: 15px;
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 0.3fr 1fr 0.7fr;
+    width: 250px;
+    height: 175px;
+    box-shadow: inset 0px 0px 5px 2px black;
+    color: white;
+    background-color: #0D0D0D;
+
+}
+.book-container > h2{
+    grid-area: 2/1/2/3;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.book-container > p {
+    font-size: 0.9rem;
+    grid-area: 3/1/3/3;
+    text-align: center;
+}
+.book-container > h3 {
+    grid-area: 4/1/4/3;
+}

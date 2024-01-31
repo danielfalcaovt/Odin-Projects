@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/phone.css" media="screen and (width: 500px)">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca</h1>
+    </header>
+    <main>
+        <button id="open-modal">Enviar um livro</button>
+        <div id="submit-form">
+            <h1>Enviar um livro</h1>
+            <button id="close-sf">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+              </button>
+            <form class="form" action="/">
+                <input required placeholder="Titulo" type="text" name="title" id="title">
+                <input required placeholder="Autor" type="text" name="author" id="author">
+                <input required placeholder="Paginas" type="number" name="pages" id="pages">
+                <div>
+                    <label for="read">Voce ja leu ?</label>
+                    <input type="checkbox" name="read" checked id="read">
+                </div>
+                <button onclick="addBookToLibrary()" id="send-book">Enviar</button>
+            </form>
+        </div>
+        <div id="books" onload="showBooks()">
+            
+
+                </div>
+                <div class="book-read">
+                </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div id="copyright"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
