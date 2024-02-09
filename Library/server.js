@@ -18,18 +18,16 @@ app.get("/",(req,res)=>{
 app.post("/",(req,res)=>{
     const title = req.body.title;
     const author = req.body.author;
-    const pages = req.body.pages + " Paginas";
-    let read = req.body.read;
-    if (read == "on"){
-        read = "Ja lido!";
+    let pages;
+    if (req.body.pages > 50560){
+        pages = `+50560 Paginas`
     }else{
-        read =  "Por ler!";
-    }
+        pages = req.body.pages + " Paginas";
+}
     const newBook = {
         bookTitle:title,
         bookAuthor:author,
         bookPages:pages,
-        bookRead:read,
         id:books.length
     };
     books.push(newBook);
